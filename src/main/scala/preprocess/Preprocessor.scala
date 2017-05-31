@@ -161,7 +161,8 @@ class Preprocessor extends Serializable {
     //过滤词汇表
     val numPattern = "[0-9]+".r
     val vocabulary = parentVecModel.vocabulary.flatMap { term =>
-      if (term.length == 1 || term.matches(numPattern.regex)) None else Some(term)
+//      if (term.length == 1 || term.matches(numPattern.Regex)) None else Some(term)
+      if (term.length == 1 || numPattern.pattern.matche(term)) None else Some(term)
     }
 
     val vecModel = new CountVectorizerModel(Identifiable.randomUID("cntVec"), vocabulary)

@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yhao</groupId>
-    <artifactId>ckoocML</artifactId>
+    <artifactId>wordML</artifactId>
     <version>0.0.1</version>
 
-    <name>ckoocML</name>
+    <name>wordML</name>
     <description>yhao的机器学习项目</description>
 
     <licenses>
@@ -21,7 +21,7 @@
     <developers>
         <developer>
             <name>yhao</name>
-            <email>yhao2014@sina.com</email>
+            <email>yeahydq@163.com</email>
             <url>http://blog.csdn.net/yhao2014</url>
         </developer>
     </developers>
@@ -83,11 +83,11 @@
         </dependency>
 
         <!-- Hadoop client, 主要用于连接HDFS -->
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-client</artifactId>
-            <version>${hadoop.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.hadoop</groupId>-->
+            <!--<artifactId>hadoop-client</artifactId>-->
+            <!--<version>${hadoop.version}</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
